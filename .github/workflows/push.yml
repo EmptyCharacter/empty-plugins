@@ -12,7 +12,7 @@ jobs:
 
       - name: Prepare bootstrap files
         run: |
-          touch plugins.json
+          touch plugins.jsons
           mkdir release
 
       - name: Make gradlew executable
