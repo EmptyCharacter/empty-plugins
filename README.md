@@ -1,4 +1,4 @@
 # Plugins
-The Unethical plugins are actively maintained and should be working.
+Ignore all plugins except Overload and PrayerFlicker
 
-The Hoot plugins are not maintained, they were created purely to experiment with and should be deemed unstable.
+Everything else is either half written or broken
