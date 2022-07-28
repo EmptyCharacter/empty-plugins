@@ -13,7 +13,7 @@ plugins {
     kotlin("jvm") version "1.6.21"
 }
 
-project.extra["GithubUrl"] = "https://github.com/EmptyCharacter/empty-plugins"
+project.extra["GithubUrl"] = "https://github.com/EmptyCharacter/empty-plugins-release"
 project.extra["GithubUserName"] = "EmptyCharacter"
 project.extra["GithubRepoName"] = "empty-plugins"
 
