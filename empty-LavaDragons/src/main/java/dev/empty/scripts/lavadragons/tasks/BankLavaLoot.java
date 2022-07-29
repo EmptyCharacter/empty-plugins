@@ -20,13 +20,10 @@ import java.util.List;
 public class BankLavaLoot implements ScriptTask
 {
 
+    private static final WorldPoint SafeSpot = new WorldPoint(2470, 4363, 0);
     @Inject
     private ItemManager itemManager;
-
     private List<TileItem> notOurItems = new ArrayList<>();
-
-    private static final WorldPoint SafeSpot = new WorldPoint(2470, 4363, 0);
-
 
     @Override
     public boolean validate()

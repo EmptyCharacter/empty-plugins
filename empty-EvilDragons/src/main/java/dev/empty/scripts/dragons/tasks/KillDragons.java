@@ -21,13 +21,11 @@ import java.util.List;
 public class KillDragons implements ScriptTask
 {
 
-    @Inject
-    private ItemManager itemManager;
-
-    private List<TileItem> notOurItems = new ArrayList<>();
-
     private static final WorldPoint SafeSpot = new WorldPoint(2470, 4363, 0);
     private static final WorldArea SafeSpotArea = new WorldArea(2470, 4363, 1, 1, 0);
+    @Inject
+    private ItemManager itemManager;
+    private List<TileItem> notOurItems = new ArrayList<>();
     private boolean test = false;
 
     @Override
