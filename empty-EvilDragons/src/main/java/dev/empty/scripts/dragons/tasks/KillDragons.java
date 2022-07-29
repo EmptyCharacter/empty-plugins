@@ -21,57 +21,61 @@ import java.util.List;
 public class KillDragons implements ScriptTask
 {
 
-	@Inject
-	private ItemManager itemManager;
+    @Inject
+    private ItemManager itemManager;
 
-	private List<TileItem> notOurItems = new ArrayList<>();
+    private List<TileItem> notOurItems = new ArrayList<>();
 
-	private static final WorldPoint SafeSpot = new WorldPoint(2470, 4363, 0);
-	private static final WorldArea SafeSpotArea = new WorldArea(2470, 4363, 1, 1, 0);
-	private boolean test = false;
+    private static final WorldPoint SafeSpot = new WorldPoint(2470, 4363, 0);
+    private static final WorldArea SafeSpotArea = new WorldArea(2470, 4363, 1, 1, 0);
+    private boolean test = false;
 
-	@Override
-	public boolean validate() { return !Inventory.isFull() && !Inventory.contains(ItemID.RAW_CHICKEN); }
+    @Override
+    public boolean validate()
+    {
+        return !Inventory.isFull() && !Inventory.contains(ItemID.RAW_CHICKEN);
+    }
 
-	@Override
-	public int execute()
-	{
-		Player local = Players.getLocal();
-		NPC mob = Combat.getAttackableNPC("Black dragon");
-
-
-		if (!Inventory.isFull())
-		{
-			TileItem loot = TileItems.getNearest("Dragon bones", "Black dragonhide");
-			if (loot != null)
-			{
-				if (!Reachable.isInteractable(loot.getTile()))
-				{
-					Movement.walkTo(loot.getTile().getWorldLocation());
-					return -4;
-				}
-
-				loot.pickup();
-				return -3;
-			}
-			Movement.walkTo(SafeSpot);
-		}
+    @Override
+    public int execute()
+    {
+        Player local = Players.getLocal();
+        NPC mob = Combat.getAttackableNPC("Black dragon");
 
 
+        if (!Inventory.isFull())
+        {
+            TileItem loot = TileItems.getNearest("Dragon bones", "Black dragonhide");
+            if (loot != null)
+            {
+                if (!Reachable.isInteractable(loot.getTile()))
+                {
+                    Movement.walkTo(loot.getTile().getWorldLocation());
+                    return -4;
+                }
 
-		if (SafeSpotArea.contains(local))
-		{
-			Combat.setAttackStyle(Combat.AttackStyle.FOURTH);
-			mob.interact("Attack");
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-			Combat.setAttackStyle(Combat.AttackStyle.SECOND);
+                loot.pickup();
+                return -3;
+            }
+            Movement.walkTo(SafeSpot);
+        }
 
-		}
 
-		return 1000;
-	}
+        if (SafeSpotArea.contains(local))
+        {
+            Combat.setAttackStyle(Combat.AttackStyle.FOURTH);
+            mob.interact("Attack");
+            try
+            {
+                Thread.sleep(1000);
+            } catch (InterruptedException e)
+            {
+                e.printStackTrace();
+            }
+            Combat.setAttackStyle(Combat.AttackStyle.SECOND);
+
+        }
+
+        return 1000;
+    }
 }

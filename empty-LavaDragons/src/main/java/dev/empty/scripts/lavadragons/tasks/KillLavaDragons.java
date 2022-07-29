@@ -13,43 +13,40 @@ import net.unethicalite.api.movement.Reachable;
 
 public class KillLavaDragons implements ScriptTask
 {
-	private static final WorldPoint SafeSpot = new WorldPoint(2470, 4363, 0);
+    private static final WorldPoint SafeSpot = new WorldPoint(2470, 4363, 0);
 
 
+    @Override
+    public boolean validate()
+    {
+        return true;
+    }
 
-	@Override
-	public boolean validate()
-	{
-		return true;
-	}
-
-	@Override
-	public int execute()
-	{
-		Player local = Players.getLocal();
-		NPC mob = Combat.getAttackableNPC("Black dragon");
-
-
-		if (!Inventory.isFull())
-		{
-			TileItem loot = TileItems.getNearest("Dragon bones", "Black dragonhide");
-			if (loot != null)
-			{
-				if (!Reachable.isInteractable(loot.getTile()))
-				{
-					Movement.walkTo(loot.getTile().getWorldLocation());
-					return -4;
-				}
-
-				loot.pickup();
-				return -3;
-			}
-			Movement.walkTo(SafeSpot);
-		}
+    @Override
+    public int execute()
+    {
+        Player local = Players.getLocal();
+        NPC mob = Combat.getAttackableNPC("Black dragon");
 
 
+        if (!Inventory.isFull())
+        {
+            TileItem loot = TileItems.getNearest("Dragon bones", "Black dragonhide");
+            if (loot != null)
+            {
+                if (!Reachable.isInteractable(loot.getTile()))
+                {
+                    Movement.walkTo(loot.getTile().getWorldLocation());
+                    return -4;
+                }
+
+                loot.pickup();
+                return -3;
+            }
+            Movement.walkTo(SafeSpot);
+        }
 
 
-		return 1000;
-	}
+        return 1000;
+    }
 }

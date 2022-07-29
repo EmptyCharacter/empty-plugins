@@ -9,39 +9,40 @@ import net.unethicalite.api.widgets.Prayers;
 
 public class Absorption implements ScriptTask
 {
-	private static final WorldPoint BANK_TILE = new WorldPoint(3268, 3167, 0);
+    private static final WorldPoint BANK_TILE = new WorldPoint(3268, 3167, 0);
 
-	@Override
-	public boolean validate()
-	{
-		return true;
-	}
+    @Override
+    public boolean validate()
+    {
+        return true;
+    }
 
-	@Override
-	public int execute()
-	{
-		Prayers.toggleQuickPrayer(true);
-		try {
-			Thread.sleep(700);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		Prayers.toggleQuickPrayer(false);
-
-
-		if(Skills.getLevel(Skill.ATTACK) == Skills.getBoostedLevel(Skill.ATTACK))
-		{
-			Item overloadPotion = Inventory.getFirst(x -> x.hasAction("Drink")
-					&& (x.getName().contains("Overload") || x.getName().contains("Overload")));
-			if (overloadPotion != null)
-			{
-				overloadPotion.interact("Drink");
-				return 7000;
-			}
-		}
+    @Override
+    public int execute()
+    {
+        Prayers.toggleQuickPrayer(true);
+        try
+        {
+            Thread.sleep(700);
+        } catch (InterruptedException e)
+        {
+            e.printStackTrace();
+        }
+        Prayers.toggleQuickPrayer(false);
 
 
+        if (Skills.getLevel(Skill.ATTACK) == Skills.getBoostedLevel(Skill.ATTACK))
+        {
+            Item overloadPotion = Inventory.getFirst(x -> x.hasAction("Drink")
+                    && (x.getName().contains("Overload") || x.getName().contains("Overload")));
+            if (overloadPotion != null)
+            {
+                overloadPotion.interact("Drink");
+                return 7000;
+            }
+        }
 
-		return 35_000;
-	}
+
+        return 35_000;
+    }
 }

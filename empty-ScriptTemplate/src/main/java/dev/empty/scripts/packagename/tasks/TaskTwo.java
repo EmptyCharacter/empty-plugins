@@ -5,17 +5,17 @@ public class TaskTwo implements ScriptTask
 {
 
 
+    @Override
+    public boolean validate()
+    {
+        return false;
+    }
 
-	@Override
-	public boolean validate() { return false; }
-
-	@Override
-	public int execute()
-	{
+    @Override
+    public int execute()
+    {
 
 
-
-
-		return 1000;
-	}
+        return 1000;
+    }
 }

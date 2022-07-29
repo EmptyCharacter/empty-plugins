@@ -6,18 +6,20 @@ public class KillCows implements ScriptTask
 {
 
 
-	private static final WorldPoint CowPen = new WorldPoint(2470, 4363, 0);
+    private static final WorldPoint CowPen = new WorldPoint(2470, 4363, 0);
 
 
-	@Override
-	public boolean validate() { return false; }
+    @Override
+    public boolean validate()
+    {
+        return false;
+    }
 
-	@Override
-	public int execute()
-	{
+    @Override
+    public int execute()
+    {
 
 
-
-		return 1000;
-	}
+        return 1000;
+    }
 }

@@ -20,22 +20,25 @@ import java.util.List;
 public class BankLavaLoot implements ScriptTask
 {
 
-	@Inject
-	private ItemManager itemManager;
+    @Inject
+    private ItemManager itemManager;
 
-	private List<TileItem> notOurItems = new ArrayList<>();
+    private List<TileItem> notOurItems = new ArrayList<>();
 
-	private static final WorldPoint SafeSpot = new WorldPoint(2470, 4363, 0);
+    private static final WorldPoint SafeSpot = new WorldPoint(2470, 4363, 0);
 
 
-	@Override
-	public boolean validate() { return !Inventory.isFull() && !Inventory.contains(ItemID.RAW_CHICKEN); }
+    @Override
+    public boolean validate()
+    {
+        return !Inventory.isFull() && !Inventory.contains(ItemID.RAW_CHICKEN);
+    }
 
-	@Override
-	public int execute()
-	{
-		Player local = Players.getLocal();
-		NPC mob = Combat.getAttackableNPC("Black dragon");
+    @Override
+    public int execute()
+    {
+        Player local = Players.getLocal();
+        NPC mob = Combat.getAttackableNPC("Black dragon");
 
 //			mob.interact("Attack");
 //			Movement.walkTo(SafeSpot);
@@ -43,22 +46,22 @@ public class BankLavaLoot implements ScriptTask
 
 //		Loots then walks back to SAFESPOT
 //		----------------------------------------------------------------------------------------------
-		if (!Inventory.isFull())
-		{
-			TileItem loot = TileItems.getNearest("Dragon bones", "Black dragonhide");
-			if (loot != null)
-			{
-				if (!Reachable.isInteractable(loot.getTile()))
-				{
-					Movement.walkTo(loot.getTile().getWorldLocation());
-					return -4;
-				}
+        if (!Inventory.isFull())
+        {
+            TileItem loot = TileItems.getNearest("Dragon bones", "Black dragonhide");
+            if (loot != null)
+            {
+                if (!Reachable.isInteractable(loot.getTile()))
+                {
+                    Movement.walkTo(loot.getTile().getWorldLocation());
+                    return -4;
+                }
 
-				loot.pickup();
-				return -3;
-			}
-			Movement.walkTo(SafeSpot);
-		}
+                loot.pickup();
+                return -3;
+            }
+            Movement.walkTo(SafeSpot);
+        }
 //		----------------------------------------------------------------------------------------------
 
 
@@ -70,10 +73,6 @@ public class BankLavaLoot implements ScriptTask
 //		}
 
 
-
-
-
-
-		return 1000;
-	}
+        return 1000;
+    }
 }

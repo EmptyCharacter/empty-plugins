@@ -1,6 +1,7 @@
 package dev.empty.scripts.packagename.tasks;
 
-public class doNothing implements ScriptTask{
+public class doNothing implements ScriptTask
+{
 
     @Override
     public boolean validate()
@@ -11,7 +12,6 @@ public class doNothing implements ScriptTask{
     @Override
     public int execute()
     {
-
 
 
         return 1000;
