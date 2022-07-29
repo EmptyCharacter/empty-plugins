@@ -1,10 +1,10 @@
 package dev.empty.scripts.lavadragons;
 
-import dev.empty.scripts.lavadragons.tasks.ScriptTask;
-import dev.empty.scripts.lavadragons.tasks.KillLavaDragons;
 import dev.empty.scripts.lavadragons.tasks.BankLavaLoot;
-import net.unethicalite.api.plugins.Script;
+import dev.empty.scripts.lavadragons.tasks.KillLavaDragons;
+import dev.empty.scripts.lavadragons.tasks.ScriptTask;
 import net.runelite.client.plugins.PluginDescriptor;
+import net.unethicalite.api.plugins.Script;
 import org.pf4j.Extension;
 
 // This annotation is required in order for the client to detect it as a plugin/script.

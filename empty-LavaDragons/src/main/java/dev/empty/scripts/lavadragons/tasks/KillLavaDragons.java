@@ -1,15 +1,15 @@
 package dev.empty.scripts.lavadragons.tasks;
 
-import net.runelite.api.*;
+import net.runelite.api.NPC;
+import net.runelite.api.Player;
+import net.runelite.api.TileItem;
+import net.runelite.api.coords.WorldPoint;
 import net.unethicalite.api.entities.Players;
 import net.unethicalite.api.entities.TileItems;
-import net.unethicalite.api.entities.TileObjects;
 import net.unethicalite.api.game.Combat;
-import net.unethicalite.api.items.Bank;
 import net.unethicalite.api.items.Inventory;
 import net.unethicalite.api.movement.Movement;
 import net.unethicalite.api.movement.Reachable;
-import net.runelite.api.coords.WorldPoint;
 
 public class KillLavaDragons implements ScriptTask
 {

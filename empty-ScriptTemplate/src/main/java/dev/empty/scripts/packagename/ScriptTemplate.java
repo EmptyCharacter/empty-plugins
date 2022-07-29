@@ -4,8 +4,8 @@ import dev.empty.scripts.packagename.tasks.ScriptTask;
 import dev.empty.scripts.packagename.tasks.TaskOne;
 import dev.empty.scripts.packagename.tasks.TaskThree;
 import dev.empty.scripts.packagename.tasks.TaskTwo;
-import net.unethicalite.api.plugins.Script;
 import net.runelite.client.plugins.PluginDescriptor;
+import net.unethicalite.api.plugins.Script;
 import org.pf4j.Extension;
 
 // This annotation is required in order for the client to detect it as a plugin/script.

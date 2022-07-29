@@ -1,8 +1,6 @@
 package dev.empty.scripts.rockcake.tasks;
 
 import net.runelite.api.Item;
-import net.runelite.api.Skill;
-import net.unethicalite.api.game.Skills;
 import net.unethicalite.api.items.Inventory;
 
 public class Eat implements ScriptTask

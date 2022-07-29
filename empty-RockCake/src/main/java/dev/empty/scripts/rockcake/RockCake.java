@@ -1,9 +1,9 @@
 package dev.empty.scripts.rockcake;
 
-import dev.empty.scripts.rockcake.tasks.ScriptTask;
 import dev.empty.scripts.rockcake.tasks.Eat;
-import net.unethicalite.api.plugins.Script;
+import dev.empty.scripts.rockcake.tasks.ScriptTask;
 import net.runelite.client.plugins.PluginDescriptor;
+import net.unethicalite.api.plugins.Script;
 import org.pf4j.Extension;
 
 // This annotation is required in order for the client to detect it as a plugin/script.

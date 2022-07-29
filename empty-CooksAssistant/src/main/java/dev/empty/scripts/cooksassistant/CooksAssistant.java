@@ -3,8 +3,8 @@ package dev.empty.scripts.cooksassistant;
 import dev.empty.scripts.cooksassistant.tasks.CompleteQuest;
 import dev.empty.scripts.cooksassistant.tasks.GetIngredients;
 import dev.empty.scripts.cooksassistant.tasks.ScriptTask;
-import net.unethicalite.api.plugins.Script;
 import net.runelite.client.plugins.PluginDescriptor;
+import net.unethicalite.api.plugins.Script;
 import org.pf4j.Extension;
 
 // This annotation is required in order for the client to detect it as a plugin/script.

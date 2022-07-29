@@ -1,10 +1,10 @@
 package dev.empty.scripts.moobank;
 
+import dev.empty.scripts.moobank.tasks.BankHides;
 import dev.empty.scripts.moobank.tasks.KillCows;
 import dev.empty.scripts.moobank.tasks.ScriptTask;
-import net.unethicalite.api.plugins.Script;
-import dev.empty.scripts.moobank.tasks.BankHides;
 import net.runelite.client.plugins.PluginDescriptor;
+import net.unethicalite.api.plugins.Script;
 import org.pf4j.Extension;
 
 // This annotation is required in order for the client to detect it as a plugin/script.

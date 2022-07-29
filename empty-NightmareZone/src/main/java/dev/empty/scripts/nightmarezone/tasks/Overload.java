@@ -1,13 +1,13 @@
 package dev.empty.scripts.nightmarezone.tasks;
 
+import net.runelite.api.DialogOption;
+import net.runelite.api.ItemID;
+import net.runelite.api.NPC;
 import net.unethicalite.api.entities.NPCs;
 import net.unethicalite.api.items.Inventory;
 import net.unethicalite.api.movement.Movement;
 import net.unethicalite.api.movement.Reachable;
 import net.unethicalite.api.widgets.Dialog;
-import net.runelite.api.DialogOption;
-import net.runelite.api.ItemID;
-import net.runelite.api.NPC;
 
 public class Overload implements ScriptTask
 {
