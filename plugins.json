@@ -8,7 +8,7 @@
     "date": "2022-07-30",
     "sha512sum": "B412D4B2727965C1C17BD3299EFFB91066075A8BE6F9042531AC3F02BCCA31C2A4A45234421E229E84B134C6280D9E264C3216794CC9EF856CE61FC9EDBF47C3",
     "version": "0.0.1",
-    "url": "https://raw.githubusercontent.com/EmptyCharacter/empty-plugins/master/empty-Overload-0.0.1.jar",
+    "url": "https://raw.githubusercontent.com/EmptyCharacter/empty-plugins/master/release/empty-Overload-0.0.1.jar",
     "requires": "^1.0.0"
   }]
 }, {
@@ -21,7 +21,7 @@
     "date": "2022-07-30",
     "sha512sum": "140A58086196D32DFCA531019B39B6C4418D16D300F8D39987ECAE4AE7BB1761E553AA049CCF2157129D6F5ED824AD50DB2A1A42EC490A836469467B7458AA64",
     "version": "0.0.1",
-    "url": "https://raw.githubusercontent.com/EmptyCharacter/empty-plugins/master/empty-PrayerFlicker-0.0.1.jar",
+    "url": "https://raw.githubusercontent.com/EmptyCharacter/empty-plugins/master/release/empty-PrayerFlicker-0.0.1.jar",
     "requires": "^1.0.0"
   }]
 }]
