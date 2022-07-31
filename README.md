@@ -1,3 +1,3 @@
-EVERYTHING BROKEN WAIT
-havent tested since updates during 7/26-7/29, but previously overload and flick works fine for nmz. 
-just enable both when you get in there, you'll have to cake n absorp on ur own. lmk if any bugs
+lmk
+<br/>
+![working](https://user-images.githubusercontent.com/56858535/182030421-d5d1fb2f-fdaf-4306-87f5-a3e0b23402a6.jpg)
