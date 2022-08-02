@@ -1,4 +1,4 @@
-package dev.empty.scripts.packagename.tasks;
+package dev.empty.scripts.prayerflicker.tasks;
 
 public class doNothing implements ScriptTask
 {

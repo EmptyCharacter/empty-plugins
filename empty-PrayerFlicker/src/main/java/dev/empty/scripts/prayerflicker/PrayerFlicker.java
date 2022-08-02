@@ -1,8 +1,8 @@
-package dev.empty.scripts.packagename;
+package dev.empty.scripts.prayerflicker;
 
-import dev.empty.scripts.packagename.tasks.Flick;
-import dev.empty.scripts.packagename.tasks.ScriptTask;
-import dev.empty.scripts.packagename.tasks.doNothing;
+import dev.empty.scripts.prayerflicker.tasks.Flick;
+import dev.empty.scripts.prayerflicker.tasks.ScriptTask;
+import dev.empty.scripts.prayerflicker.tasks.doNothing;
 import net.runelite.client.plugins.PluginDescriptor;
 import net.unethicalite.api.plugins.Script;
 import org.pf4j.Extension;
