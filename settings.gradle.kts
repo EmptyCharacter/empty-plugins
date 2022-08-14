@@ -1,16 +1,15 @@
 rootProject.name = "empty-plugins"
 
 //include("empty-EvilDragons")
-//include("empty-Motherlode")
 //include("empty-NightmareZone")
-//include("empty-CooksAssistant")
+//include("empty-IronMine")
 //include("empty-MooBank")
 //include("empty-ScriptTemplate")
 //include("empty-LavaDragons")
-//include("empty-Absorption")
+//include("empty-DustDevils")
 //include("empty-RockCake")
-include("empty-PrayerFlicker")
-include("empty-Overload")
+//include("empty-PrayerFlicker")
+//include("empty-Overload")
 
 
 
