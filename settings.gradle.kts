@@ -8,8 +8,8 @@ rootProject.name = "empty-plugins"
 //include("empty-LavaDragons")
 //include("empty-DustDevils")
 //include("empty-RockCake")
-//include("empty-PrayerFlicker")
-//include("empty-Overload")
+include("empty-PrayerFlicker")
+include("empty-Overload")
 
 
 
