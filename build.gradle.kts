@@ -15,7 +15,7 @@ plugins {
 
 project.extra["GithubUrl"] = "https://github.com/EmptyCharacter/empty-plugins-release"
 project.extra["GithubUserName"] = "EmptyCharacter"
-project.extra["GithubRepoName"] = "empty-plugins"
+project.extra["GithubRepoName"] = "empty-plugins-release"
 
 apply<BootstrapPlugin>()
 
